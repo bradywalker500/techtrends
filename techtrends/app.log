@@ -1,0 +1,134 @@
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.43.12:3111/ (Press CTRL+C to quit)
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.43.12:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 13:45:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 13:45:22] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 13:45:52] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Status request successfull
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 13:47:34] "GET /healthz HTTP/1.1" 200 -
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 13:47:39] "[33mGET /metrics/ HTTP/1.1[0m" 404 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 13:47:43] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 13:47:50] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 13:47:51] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 13:48:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 13:48:08] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 13:48:10] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 13:48:15] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 13:48:15] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 13:48:18] "GET /metrics HTTP/1.1" 200 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.43.12:3111/ (Press CTRL+C to quit)
+INFO:app:Metrics request successfull
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 13:52:02] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 13:57:30] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 13:57:51] "GET /metrics HTTP/1.1" 200 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.43.12:3111/ (Press CTRL+C to quit)
+INFO:app:1675688347.5538545
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 13:59:07] "GET /metrics HTTP/1.1" 200 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.43.12:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 13:59:27] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 13:59:37] "GET /metrics HTTP/1.1" 200 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.43.12:3111/ (Press CTRL+C to quit)
+INFO:app:1675688652.1617465, Metrics request successfull
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:04:12] "GET /metrics HTTP/1.1" 200 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.43.12:3111/ (Press CTRL+C to quit)
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sniperking\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sniperking\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sniperking\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sniperking\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "E:\udacity\Cloud Native Application Architecture\Project 1\TechTrends\techtrends\app.py", line 101, in metrics
+    app.logger.info('{ts}, Metrics request successfull'.format(ts=time.time().strftime("%m/%d/%Y, %H:%M:%S")))
+AttributeError: 'float' object has no attribute 'strftime'
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:06:57] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.43.12:3111/ (Press CTRL+C to quit)
+INFO:app:02/06/2023, 14:10:26, Metrics request successfull
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:10:26] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:12:52] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:12:53] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.43.12:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:17:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:17:42] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Sniperking\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sniperking\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sniperking\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sniperking\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "E:\udacity\Cloud Native Application Architecture\Project 1\TechTrends\techtrends\app.py", line 59, in post
+    ts=datetime.datetime.now().strftime("%m/%d/%Y, %H:%M:%S"), title=post.title))
+AttributeError: 'sqlite3.Row' object has no attribute 'title'
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:17:49] "[35m[1mGET /1 HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.43.12:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:18:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:18:37] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:02/06/2023, 14:18:38, Article "2020 CNCF Annual Report" retrieved!
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:18:38] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:18:38] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.43.12:3111/ (Press CTRL+C to quit)
+INFO:app:02/06/2023, 14:21:42, Article with id "13" not found
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:21:42] "[33mGET /13 HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:21:43] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.43.12:3111/ (Press CTRL+C to quit)
+INFO:app:02/06/2023, 14:25:27, Metrics request successfull
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:25:27] "GET /metrics HTTP/1.1" 200 -
+INFO:app:02/06/2023, 14:25:38, Health check successfull
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:25:38] "GET /healthz HTTP/1.1" 200 -
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:25:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:25:50] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:02/06/2023, 14:25:57, Article "2020 CNCF Annual Report" retrieved!
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:25:57] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:25:57] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:02/06/2023, 14:26:04, The "About Us" page is retrieved!
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:26:04] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:26:04] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:26:15] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:26:15] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:02/06/2023, 14:26:27, Article with id "8" not found
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:26:27] "[33mGET /8 HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:26:27] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:26:38] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:26:38] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:02/06/2023, 14:27:17, Article "testing" has been created!
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:27:17] "[32mPOST /create HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:27:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.43.12 - - [06/Feb/2023 14:27:17] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
